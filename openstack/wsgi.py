@@ -86,6 +86,7 @@ class Server(object):
             bind_addr = info[-1]
         except Exception:
             family = socket.AF_INET
+            traceback.print_exc()
 
         try:
             self._socket = eventlet.listen(bind_addr, family, backlog=backlog)
