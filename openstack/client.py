@@ -7,8 +7,9 @@ import openstack.service as service
 
 
 def main():
-    server = service.WSGIService('example_wsgi')
-    server.start()
+    # server = service.WSGIService('example_wsgi')
+    # server.start()
+    url_map_test()
 
 
 def show_version_test():

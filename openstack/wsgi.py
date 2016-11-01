@@ -28,10 +28,6 @@ import traceback
 import eventlet
 import eventlet.wsgi
 import greenlet
-from oslo_config import cfg
-from oslo_log import log as logging
-from oslo_log import loggers
-from oslo_utils import excutils
 from paste import deploy
 import routes.middleware
 import webob.dec
